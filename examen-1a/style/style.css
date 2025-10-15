@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Jersey';
+    src: url('../assets/Jersey10-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body{
+    padding-top: 200px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Jersey";
+    font-style: normal;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+button{
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input{
+    width: 100%;
+}
+
+button,
+input
+{
+    padding: 10px;
+    border-radius: 8px;
+}
+
+p{
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+}
+
+#button-step{
+    text-align: center;
+}
+
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 45%;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: rgba(138, 138, 138, 0.4);
+    border-radius: 8px;
+    outline: 2px dashed #126463;
+    outline-offset: 6px;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes mover {
+  0%   { transform: translateX(100%); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateX(-100%); opacity: 0; }
+}
+
+.estrella {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 10px;
+  animation: mover 1s linear infinite;
+
+  position: absolute;
+  z-index: -1;
+  text-shadow: 2px 2px rgba(255,255,255,.8);
+}

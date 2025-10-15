@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>🪧Formulario por partes</title>
+</head>
+<body>
+    <h1>
+        Bienvenido al NeXo 🤖
+    </h1>
+
+    <div id="step-1" class="info-container">
+        <p>
+            Bienvenid@ a nuestros sistema, viajero. Necesitamos que te registres en el <i>Nexo</i> para poder atracar tu nave
+        </p>
+        <div>
+            <input
+                type="text"
+                id="user-name"
+                placeholder="Nombre de usuario"
+                autofocus
+            >
+        </div>
+    </div>
+    <!-- Inicio del paso 2 -->
+    <div id="step-2" class="hide info-container">
+        <p>
+            Ahora necesitamos un correo electrónico para enviarte el cifrado de tu tarjeta de embarque
+        </p>
+        <div>
+            <input
+                type="email"
+                id="user-mail"
+                placeholder="Introduce un correo electrónico"
+            >
+        </div>
+    </div>
+    <!-- Inicio del paso 3 -->
+    <div id="step-3" class="hide info-container">
+        <p>
+            Por último, debes cifrar tus datos con una contraseña. No pasa nada, te la enviaremos al correo proporcionado anteriormente
+        </p>
+        <div>
+            <input
+                type="password"
+                id="user-password"
+                placeholder="Introduce una contraseña"
+            >
+        </div>
+    </div>
+    <!-- Finalizar -->
+    <div id="finish" class="hide info-container">
+        <p>
+            Vamos a comprobar que todo esté bien introducido en el sistema
+        </p>
+
+        <div>
+            <p id="finish-name"></p>
+            <p id="finish-mail"></p>
+            <p id="finish-password"></p>
+        </div>
+    </div>
+    <div id="button-step">
+        <button id="next-step">Siguiente</button>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
